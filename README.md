@@ -42,6 +42,8 @@ Entre na pasta web e rode o comando abaixo:
 ## Mobile    
 
 Para testar a aplicação mobile será necessário **baixar o app Expo** no seu dispositivo.
+
+   > **NOTA:** É necessário mudar o ip do arquivo **api.ts** na pasta **services** para o seu IP local (o mesmo utilizado pelo Expo).
   
   > Este comando iniciará o Expo no navegador e irá criar um **QR Code** na janela do terminal e no próprio browser. Para abrir a aplicação no seu dispositivo, **instale o app do Expo** e escaneie o código com um leitor de **QR** *(ou com a câmera, no caso de dispositivos iOS)*.
   
