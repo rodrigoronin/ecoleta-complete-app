@@ -35,7 +35,7 @@ Caso queira conferir a lista dos pontos de coleta, pode fazê-lo no arquivo **cr
 
 Entre na pasta web e rode o comando abaixo:
   
-  > Este comando ira iniciar e abrir a aplicação em **http://localhost:3333**. Caso seja necessário, pode mudar a porta no arquivo **api.ts** dentro da pasta **services**.
+  > Este comando ira iniciar e abrir a aplicação em **http://localhost:3000**.
   
   - **npm run start**
   
