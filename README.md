@@ -9,7 +9,7 @@ O app foi desenvolvido durante o bootcamp #NextLevelWeek da [RocketSeat](https:/
 
 ## Versão Mobile 
 
-![Web app](https://i.ibb.co/7gs4bTh/Capturar2.png)
+![Mobile app](https://i.ibb.co/7gs4bTh/Capturar2.png)
 
 
 # Instalação
