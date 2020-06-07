@@ -14,7 +14,7 @@ O app foi desenvolvido durante o bootcamp NextLevelWeek da RocketSeat utilizando
 
 # Instalação
 
-> **NOTA:** Antes de utilizar prosseguir, lembre-se de entrar nas pastas dos projetos e rodar o comando **npm install** para instalar todas as dependências necessárias.
+> **NOTA:** Antes de prosseguir, lembre-se de entrar nas pastas dos projetos e rodar o comando **npm install** para instalar todas as dependências necessárias.
 
 ## Server
 
@@ -35,7 +35,7 @@ Caso queira conferir a lista dos pontos de coleta, pode fazê-lo no arquivo **cr
 
 Entre na pasta web e rode o comando abaixo:
   
-  > Este comando ira iniciar e abrir a aplicação em **http://localhost:3333**. Caso deseje, pode mudar a porta para outra qualquer.
+  > Este comando ira iniciar e abrir a aplicação em **http://localhost:3333**. Caso seja necessário, pode mudar a porta no arquivo **api.ts** dentro da pasta **services**.
   
   - **npm run start**
   
