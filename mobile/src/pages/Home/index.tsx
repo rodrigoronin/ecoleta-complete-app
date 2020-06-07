@@ -16,7 +16,7 @@ import { useNavigation } from "@react-navigation/native";
 import axios from "axios";
 
 // VOU MANTER PARA LEMBRAR DE REMOVER DEPOIS
-// import RNPickerSelect from "react-native-picker-select";
+import RNPickerSelect from "react-native-picker-select";
 
 interface IBGEUFResponse {
   sigla: string;
@@ -113,10 +113,15 @@ const Home = () => {
             >
               <Picker.Item label="selecione uma cidade" value="" />
               {allCities.map((city) => (
-                <Picker.Item label={city} value={city} />
+                <Picker.Item key={city} label={city} value={city} />
               ))}
             </Picker>
           )}
+
+          {/* <RNPickerSelect
+            onValueChange={(value) => setCity(value)}
+            items={allCities.map((city) => ({ label: city, value: city }))}
+          /> */}
 
           {/* <TextInput
             style={styles.input}

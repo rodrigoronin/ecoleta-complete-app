@@ -1,6 +1,8 @@
 import { Request, Response } from "express";
 import knex from "../database/connection";
 
+import InternalIp from "internal-ip";
+
 // request.params para requisições obrigatórias
 // request.query para requisições opcionais (filtros, paginação e etc)
 // request.body para criação e edição, preenchimento de dados
@@ -8,6 +10,8 @@ import knex from "../database/connection";
 class PointsController {
   async index(request: Request, response: Response) {
     const { city, uf, items } = request.query;
+
+    const localIP = InternalIp.v4.sync();
 
     const parsedItems = String(items)
       .split(",")
@@ -24,7 +28,7 @@ class PointsController {
     const serializedPoints = points.map((point) => {
       return {
         ...point,
-        image_url: `http://192.168.25.29:3333/uploads/${point.image}`,
+        image_url: `http://${localIP}:3333/uploads/${point.image}`,
       };
     });
 
@@ -47,7 +51,7 @@ class PointsController {
 
     const serializedPoint = {
       ...point,
-      image_url: `http://192.168.25.29:3333/uploads/${point.image}`,
+      image_url: `http://${localIP}:3333/uploads/${point.image}`,
     };
 
     return response.json({ point: serializedPoint, items });
